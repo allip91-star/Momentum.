@@ -1,0 +1,18 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:orientation="vertical" android:background="@drawable/widget_background"
+    android:padding="12dp">
+    <LinearLayout android:id="@+id/widget_header" android:layout_width="match_parent"
+        android:layout_height="44dp" android:gravity="center_vertical" android:orientation="horizontal">
+        <TextView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"
+            android:text="● Momentum" android:textColor="#5945CA" android:textStyle="bold" android:textSize="18sp"/>
+        <TextView android:id="@+id/widget_count" android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:textColor="#777C93" android:text="To do" android:textSize="12sp" />
+    </LinearLayout>
+    <ListView android:id="@+id/widget_habit_list" android:layout_width="match_parent"
+        android:layout_height="0dp" android:layout_weight="1" android:divider="@android:color/transparent"
+        android:dividerHeight="6dp" android:scrollbars="none" android:choiceMode="none" />
+    <TextView android:id="@+id/widget_empty" android:layout_width="match_parent" android:layout_height="0dp"
+        android:layout_weight="1" android:gravity="center" android:text="✓ All habits completed!\nNew goals appear on their next reset."
+        android:textColor="#3F967A" android:textSize="14sp" android:padding="20dp" />
+</LinearLayout>
